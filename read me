@@ -1,0 +1,27 @@
+#  ConsolePacketSniffer
+
+A C# console app that captures and analyzes Xbox/PlayStation/game network packets and shows where each IP is from using IP geolocation.
+
+##  Features
+
+- Live packet sniffing using SharpPcap
+- IP geolocation (country, city, ISP)
+- Flags for Xbox Live, PlayStation Network, and Game traffic
+- UDP port analysis
+- Console output only (no GUI)
+
+##  Requirements
+
+- Windows OS
+- [.NET 6.0 SDK](https://dotnet.microsoft.com/en-us/download)
+- [Npcap](https://npcap.com/) (Install in **WinPcap-compatible mode**)
+- Run as Administrator
+
+##  How to Run
+
+1. Clone this repo
+2. Open terminal and run:
+
+```bash
+dotnet restore
+dotnet run
