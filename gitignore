@@ -1,0 +1,25 @@
+
+---
+
+ 2. `.gitignore`
+
+:
+
+```gitignore
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyInstaller build folders
+build/
+dist/
+*.spec
+
+# VS Code and IDE files
+.vscode/
+*.swp
+
+# Mac and Windows files
+.DS_Store
+Thumbs.db
