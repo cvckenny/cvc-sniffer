@@ -1,31 +1,21 @@
-#  ConsolePacketSniffer
+ PacketSniffer
 
-A C# console app that captures and analyzes Xbox/PlayStation/game network packets and shows where each IP is from using IP geolocation.
+A simple Python GUI-based packet sniffer for console games (like Red Dead Redemption, GTA Online, etc.). Captures live traffic, shows IP addresses, ports, and country geolocation.
 
-##  Features
+ Features
 
-- Live packet sniffing using SharpPcap
-- IP geolocation (country, city, ISP)
-- Flags for Xbox Live, PlayStation Network, and Game traffic
-- UDP port analysis
-- Console output only (no GUI)
+- GUI interface with start/stop buttons
+- Network interface selection (e.g., Wi-Fi, Ethernet)
+- Live capture of IPs and ports
+- Reverse IP lookup to country (via IP-API)
+- Designed for use with games and console traffic
 
-##  Requirements
+ Requirements
 
-- Windows OS
-- [.NET 6.0 SDK](https://dotnet.microsoft.com/en-us/download)
-- [Npcap](https://npcap.com/) (Install in **WinPcap-compatible mode**)
-- Run as Administrator
+- Python 3.8+
+- Run as Administrator (for packet sniffing)
 
-##  How to Run
-
-1. Clone this repo
-2. Open terminal and run:
+ Install Requirements
 
 ```bash
-dotnet restore
-dotnet run
-
-
-This tool is for educational use only. Do not use it to monitor networks or systems you don’t own or have explicit permission to inspect.
-
+pip install scapy requests
